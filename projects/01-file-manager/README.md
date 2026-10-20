@@ -2,13 +2,13 @@
 
 This is my first Bash automation project, built while learning Linux and shell scripting.
 
-## 📌 About the Project
+## About the Project
 
 This script automatically organises files into folders based on their file extensions.
 
 Instead of manually sorting files, the user enters a directory path and the script handles the organisation.
 
-## ⚙️ Features
+## Features
 
 - Organises JPG, JPEG and PNG files into an Images folder.
 - Organises PDF and TXT files into a Documents folder.
@@ -19,13 +19,13 @@ Instead of manually sorting files, the user enters a directory path and the scri
 - Records file operations in a log.
 - Displays how many files were moved or skipped.
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - Linux (Ubuntu)
 - Bash scripting
 - Git and GitHub
 
-## 📂 Example
+## Example
 
 Before running the script:
 
@@ -51,7 +51,7 @@ file-manager-test/
 └── file-manager.log
 ```
 
-## 🚀 How to Run
+## How to Run
 
 Clone the repository:
 
@@ -81,7 +81,7 @@ Enter the full path of the directory you want to organise.
 
 **Warning:** The script moves files. Test it on a folder containing dummy files before using it on important data.
 
-## 🧠 What I Learned
+## What I Learned
 
 Building this project helped me practise:
 
@@ -94,7 +94,7 @@ Building this project helped me practise:
 - Recording script activity using logging.
 - Debugging Bash syntax errors.
 
-## 🐛 Challenges I Encountered
+## Challenges I Encountered
 
 One issue I encountered was incorrect spacing inside Bash conditions.
 
@@ -120,7 +120,7 @@ I also encountered a missing closing bracket error while fixing the condition.
 
 After correcting the syntax, I tested the script again and confirmed it worked.
 
-## 🔮 Future Improvements
+## Future Improvements
 
 - Support more file extensions.
 - Allow users to customise destination folders.
