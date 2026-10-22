@@ -1,0 +1,40 @@
+========================================
+          LINUX SYSTEM MONITOR
+========================================
+
+Hostname: Muz
+Date: Thu Oct 22 11:54:17 AM BST 2026
+Kernel: 7.0.0-38-generic
+Uptime: up 9 minutes
+
+SYSTEM RESOURCES
+----------------------------------------
+CPU Usage:    3%
+Memory Usage: 30%
+Disk Usage:   35%
+
+TOP 5 CPU CONSUMING PROCESSES
+----------------------------------------
+    PID COMMAND         %CPU
+   4919 ps               100
+   1775 gnome-shell     66.8
+   4908 localsearch-ext 52.9
+   3108 firefox         35.3
+   3995 Isolated Web Co 21.3
+
+TOP 5 MEMORY CONSUMING PROCESSES
+----------------------------------------
+    PID COMMAND         %MEM
+   3108 firefox          8.0
+   3995 Isolated Web Co  7.4
+   1775 gnome-shell      6.6
+   4668 ptyxis           3.7
+   3399 Privileged Cont  2.4
+
+SYSTEM HEALTH
+----------------------------------------
+[OK] CPU usage is 3%
+[OK] Memory usage is 30%
+[OK] Disk usage is 35%
+
+========================================
