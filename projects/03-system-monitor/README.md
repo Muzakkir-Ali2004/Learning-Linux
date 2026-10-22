@@ -1,32 +1,64 @@
 # Linux System Monitor
 
-A Bash-based Linux system monitoring tool that reports system resource usage, identifies resource-heavy processes and highlights potential performance issues.
+A Bash-based Linux monitoring tool that displays system resource usage, identifies resource-heavy processes, and generates automated health reports.
 
 ## Features
 
-- Calculates CPU utilisation using `/proc/stat`.
-- Monitors memory usage using `free` and `awk`.
-- Checks root filesystem utilisation.
-- Displays the five highest CPU-consuming processes.
-- Displays the five highest memory-consuming processes.
-- Generates warnings when resource thresholds are exceeded.
-- Creates timestamped monitoring reports.
+- CPU utilisation monitoring using `/proc/stat`
+- Memory monitoring using `free` and `awk`
+- Disk usage monitoring using `df`
+- Top five CPU-consuming processes
+- Top five memory-consuming processes
+- Automatic resource usage warnings
+- Timestamped monitoring reports
 
 ## Requirements
 
 - Linux
 - Bash
-- Standard Linux utilities: `awk`, `free`, `df`, `ps`, `head`, `date`
+- Standard Linux utilities
 
 ## Usage
 
+Make the script executable:
+
 ```bash
 chmod +x system-monitor.sh
-./system-monitor.sh
+```
 
-
-### Prevent generated reports from being uploaded
+Run the monitor:
 
 ```bash
-cat > .gitignore <<'EOF'
-reports/
+./system-monitor.sh
+```
+
+## Alert Thresholds
+
+| Resource | Warning threshold |
+|---|---|
+| CPU | 80% |
+| Memory | 80% |
+| Disk | 85% |
+
+Thresholds can be modified inside the script.
+
+## Reports
+
+Monitoring reports are automatically generated inside the `reports/` directory.
+
+Reports are excluded from Git tracking.
+
+## Technologies Used
+
+Bash, Linux, Git, awk, ps, free, df, and /proc/stat.
+
+## Future Improvements
+
+- Continuous monitoring
+- Email notifications
+- Configurable thresholds
+- Historical performance tracking
+
+## Project Purpose
+
+Created as part of my Linux and DevOps learning portfolio to develop practical system monitoring and automation skills.
